@@ -1,0 +1,558 @@
+{
+  "note": "Sample listings for the Linden & Quay demonstration. These homes are fictional and not for sale or to let. Replace this file to change the catalogue. Prices are GBP. Dates use YYYY-MM-DD.",
+  "properties": [
+    {
+      "id": "lq-2401",
+      "featured": true,
+      "market": "sale",
+      "status": "for-sale",
+      "propertyType": "house",
+      "tenure": "Freehold (sample)",
+      "price": 875000,
+      "beds": 3,
+      "baths": 2,
+      "receptions": 2,
+      "interiorSqm": 142,
+      "garden": true,
+      "parking": false,
+      "area": "Clifton",
+      "postcodeDistrict": "BS8",
+      "title": "Three-bedroom house above the gorge",
+      "summary": "A sample Clifton house with two reception rooms and a garden. Figures and condition are not verified.",
+      "description": [
+        "This sample listing describes a three-bedroom house in Clifton. The imagined layout has two reception rooms, a kitchen, and a bedroom on the lower ground floor. A west-facing garden is included in the sample features.",
+        "Nothing here is a measured survey. Room sizes, condition, and what is included in a sale would come from a real instruction and a solicitor’s pack."
+      ],
+      "features": [
+        "Two reception rooms (sample)",
+        "Garden",
+        "Sash windows (sample)",
+        "Lower-ground bedroom (sample)",
+        "No allocated parking in this sample"
+      ],
+      "locationNote": "Clifton sits beside the Avon Gorge and the Downs. This sample does not confirm schools, flood risk, or journey times.",
+      "added": "2026-10-28",
+      "images": [
+        {
+          "src": "images/modern/01.jpg",
+          "alt": "Stand-in photograph of a modern living room with a brown leather sofa, white chairs, and a grid of framed photos. Not this listing."
+        },
+        {
+          "src": "images/modern/02.jpg",
+          "alt": "Stand-in photograph of a contemporary timber house at dusk, with a lawn and a lit open-plan room. Not this listing."
+        },
+        {
+          "src": "images/modern/03.jpg",
+          "alt": "Stand-in photograph of a modern timber and white house with a black screen wall and a paved drive. Not this listing."
+        }
+      ]
+    },
+    {
+      "id": "lq-2402",
+      "featured": true,
+      "market": "sale",
+      "status": "for-sale",
+      "propertyType": "flat",
+      "tenure": "Leasehold (sample)",
+      "price": 425000,
+      "beds": 2,
+      "baths": 2,
+      "receptions": 1,
+      "interiorSqm": 78,
+      "garden": false,
+      "parking": true,
+      "area": "Harbourside",
+      "postcodeDistrict": "BS1",
+      "title": "Two-bedroom flat near the floating harbour",
+      "summary": "A sample harbourside flat with a parking space. Lease length and service charge are not stated.",
+      "description": [
+        "This sample describes a second-floor flat within walking distance of the floating harbour. The imagined plan has two bedrooms, two bathrooms, and one open reception room.",
+        "A real leasehold listing would publish the years remaining, ground rent, and service charge. Those figures are intentionally left out."
+      ],
+      "features": [
+        "Allocated parking space (sample)",
+        "Second floor (sample)",
+        "Two bathrooms (sample)",
+        "No private garden",
+        "Lift not confirmed"
+      ],
+      "locationNote": "Harbourside in this demo means the streets around the floating harbour. No exact building is identified.",
+      "added": "2026-11-02",
+      "images": [
+        {
+          "src": "images/modern/04.jpg",
+          "alt": "Stand-in photograph of an open-plan living room with a pale sofa, a kitchen island, and timber wall panels. Not this listing."
+        },
+        {
+          "src": "images/modern/05.jpg",
+          "alt": "Stand-in photograph of a modern facade with a white perforated screen and pale timber cladding. Not this listing."
+        },
+        {
+          "src": "images/modern/06.jpg",
+          "alt": "Stand-in photograph of a living room with grey sofas, a dark coffee table, and open shelving. Not this listing."
+        }
+      ]
+    },
+    {
+      "id": "lq-2403",
+      "featured": true,
+      "market": "let",
+      "status": "to-let",
+      "propertyType": "flat",
+      "tenure": "Assured tenancy (sample, not an offer)",
+      "price": 1350,
+      "beds": 1,
+      "baths": 1,
+      "receptions": 1,
+      "interiorSqm": 46,
+      "garden": false,
+      "parking": false,
+      "area": "Southville",
+      "postcodeDistrict": "BS3",
+      "title": "One-bedroom flat in Southville",
+      "summary": "A sample letting at £1,350 pcm. Bills, deposit, and availability are not confirmed.",
+      "description": [
+        "This sample letting is a one-bedroom flat in Southville. The imagined layout is a living room, a separate bedroom, a kitchen, and a bathroom.",
+        "The rent is a sample figure per calendar month. This page does not say whether bills are included, what the deposit would be, or when a tenancy could start."
+      ],
+      "features": [
+        "Separate bedroom (sample)",
+        "Unfurnished in this sample",
+        "No parking",
+        "Street-level entrance (sample)",
+        "Bills not specified"
+      ],
+      "locationNote": "Southville is south of the river, close to North Street’s shops in real life. This sample does not promise a particular street.",
+      "added": "2026-11-05",
+      "images": [
+        {
+          "src": "images/modern/07.jpg",
+          "alt": "Stand-in photograph of a bright living room with a pale sofa, a timber staircase, and floor-to-ceiling windows. Not this listing."
+        },
+        {
+          "src": "images/modern/08.jpg",
+          "alt": "Stand-in photograph of a living room with a grey sofa, a timber coffee table, and a long window. Not this listing."
+        },
+        {
+          "src": "images/modern/09.jpg",
+          "alt": "Stand-in photograph of a living room with a cream corner sofa and a gallery wall. Not this listing."
+        }
+      ]
+    },
+    {
+      "id": "lq-2404",
+      "featured": false,
+      "market": "sale",
+      "status": "for-sale",
+      "propertyType": "house",
+      "tenure": "Freehold (sample)",
+      "price": 1195000,
+      "beds": 4,
+      "baths": 2,
+      "receptions": 2,
+      "interiorSqm": 186,
+      "garden": true,
+      "parking": true,
+      "area": "Redland",
+      "postcodeDistrict": "BS6",
+      "title": "Four-bedroom family house in Redland",
+      "summary": "A larger sample house with a garden and a driveway space. The price is a guide for this demo only.",
+      "description": [
+        "This sample house is aimed at the family search in the demo. It has four bedrooms, two reception rooms, and a garden. One parking space is included in the sample features.",
+        "Use it to try filters for houses, four bedrooms, and higher sale prices. It is not a home you can buy."
+      ],
+      "features": [
+        "Four bedrooms (sample)",
+        "Garden",
+        "Driveway space (sample)",
+        "Two reception rooms (sample)",
+        "Family bathroom and en suite (sample)"
+      ],
+      "locationNote": "Redland is north of the city centre, with stone villas and terraces. Journey times are not given.",
+      "added": "2026-09-30",
+      "images": [
+        {
+          "src": "images/modern/10.jpg",
+          "alt": "Stand-in photograph of a kitchen with grey cabinets, white tile, and marble worktops. Not this listing."
+        },
+        {
+          "src": "images/modern/11.jpg",
+          "alt": "Stand-in photograph of a bedroom with a white upholstered bed, grey curtains, and a city view. Not this listing."
+        },
+        {
+          "src": "images/modern/12.jpg",
+          "alt": "Stand-in photograph of an open-plan room with a tan leather sofa and a kitchen behind it. Not this listing."
+        }
+      ]
+    },
+    {
+      "id": "lq-2405",
+      "featured": false,
+      "market": "sale",
+      "status": "for-sale",
+      "propertyType": "maisonette",
+      "tenure": "Leasehold (sample)",
+      "price": 390000,
+      "beds": 2,
+      "baths": 1,
+      "receptions": 1,
+      "interiorSqm": 71,
+      "garden": false,
+      "parking": false,
+      "area": "Totterdown",
+      "postcodeDistrict": "BS4",
+      "title": "Split-level maisonette in Totterdown",
+      "summary": "A sample two-bedroom maisonette. Share of freehold and stair access are not specified.",
+      "description": [
+        "Totterdown’s hills and painted terraces are the setting for this sample maisonette. The imagined home is split over two floors, with two bedrooms and a living room looking over roofs.",
+        "Access is described as a shared stair. A survey would check that in a real sale. This demo does not."
+      ],
+      "features": [
+        "Split-level (sample)",
+        "Two bedrooms (sample)",
+        "Shared stair (sample)",
+        "No garden",
+        "No parking"
+      ],
+      "locationNote": "Totterdown rises south-east of Temple Meads. This sample does not name a road or promise a view.",
+      "added": "2026-10-18",
+      "images": [
+        {
+          "src": "images/modern/01.jpg",
+          "alt": "Stand-in photograph of a modern living room with a brown leather sofa, white chairs, and a grid of framed photos. Not this listing."
+        },
+        {
+          "src": "images/modern/02.jpg",
+          "alt": "Stand-in photograph of a contemporary timber house at dusk, with a lawn and a lit open-plan room. Not this listing."
+        },
+        {
+          "src": "images/modern/03.jpg",
+          "alt": "Stand-in photograph of a modern timber and white house with a black screen wall and a paved drive. Not this listing."
+        }
+      ]
+    },
+    {
+      "id": "lq-2406",
+      "featured": false,
+      "market": "let",
+      "status": "to-let",
+      "propertyType": "house",
+      "tenure": "Assured tenancy (sample, not an offer)",
+      "price": 1850,
+      "beds": 3,
+      "baths": 1,
+      "receptions": 2,
+      "interiorSqm": 110,
+      "garden": true,
+      "parking": false,
+      "area": "Bedminster",
+      "postcodeDistrict": "BS3",
+      "title": "Three-bedroom terrace to let in Bedminster",
+      "summary": "A sample family letting with a garden. Pets, smoking, and the deposit are not decided.",
+      "description": [
+        "This sample is a three-bedroom terrace in Bedminster, with two reception rooms and a garden. It is here so renters can filter houses with outside space.",
+        "A real let would say who manages the tenancy, the permitted occupiers, and council tax band. Those details are omitted on purpose."
+      ],
+      "features": [
+        "Garden",
+        "Two reception rooms (sample)",
+        "Three bedrooms (sample)",
+        "Unfurnished in this sample",
+        "Pets not specified"
+      ],
+      "locationNote": "Bedminster sits south of the New Cut. This page does not estimate the walk to East Street or the station.",
+      "added": "2026-11-01",
+      "images": [
+        {
+          "src": "images/modern/04.jpg",
+          "alt": "Stand-in photograph of an open-plan living room with a pale sofa, a kitchen island, and timber wall panels. Not this listing."
+        },
+        {
+          "src": "images/modern/05.jpg",
+          "alt": "Stand-in photograph of a modern facade with a white perforated screen and pale timber cladding. Not this listing."
+        },
+        {
+          "src": "images/modern/06.jpg",
+          "alt": "Stand-in photograph of a living room with grey sofas, a dark coffee table, and open shelving. Not this listing."
+        }
+      ]
+    },
+    {
+      "id": "lq-2407",
+      "featured": false,
+      "market": "sale",
+      "status": "for-sale",
+      "propertyType": "flat",
+      "tenure": "Leasehold (sample)",
+      "price": 510000,
+      "beds": 2,
+      "baths": 2,
+      "receptions": 1,
+      "interiorSqm": 84,
+      "garden": false,
+      "parking": true,
+      "area": "Hotwells",
+      "postcodeDistrict": "BS8",
+      "title": "Two-bedroom flat in Hotwells",
+      "summary": "A sample flat between the harbour and the gorge, with parking in the description.",
+      "description": [
+        "Hotwells is the sample setting: a two-bedroom flat with two bathrooms and a parking space. The building’s age and the flat’s floor are not stated, because they were not measured for this demo.",
+        "Use the enquiry form to practise a viewing request. The request stays in your browser."
+      ],
+      "features": [
+        "Parking space (sample)",
+        "Two bathrooms (sample)",
+        "No private garden",
+        "Share of freehold not stated",
+        "Balcony not included"
+      ],
+      "locationNote": "Hotwells runs below Clifton, towards the harbour. Cliftonwood’s painted houses are nearby. This is not a pin on a map.",
+      "added": "2026-10-08",
+      "images": [
+        {
+          "src": "images/modern/07.jpg",
+          "alt": "Stand-in photograph of a bright living room with a pale sofa, a timber staircase, and floor-to-ceiling windows. Not this listing."
+        },
+        {
+          "src": "images/modern/08.jpg",
+          "alt": "Stand-in photograph of a living room with a grey sofa, a timber coffee table, and a long window. Not this listing."
+        },
+        {
+          "src": "images/modern/09.jpg",
+          "alt": "Stand-in photograph of a living room with a cream corner sofa and a gallery wall. Not this listing."
+        }
+      ]
+    },
+    {
+      "id": "lq-2408",
+      "featured": false,
+      "market": "sale",
+      "status": "for-sale",
+      "propertyType": "house",
+      "tenure": "Freehold (sample)",
+      "price": 640000,
+      "beds": 3,
+      "baths": 2,
+      "receptions": 1,
+      "interiorSqm": 118,
+      "garden": true,
+      "parking": true,
+      "area": "Bishopston",
+      "postcodeDistrict": "BS7",
+      "title": "Three-bedroom house in Bishopston",
+      "summary": "A mid-price sample house with a garden and a parking space.",
+      "description": [
+        "This Bishopston sample is a three-bedroom house with one reception room, two bathrooms, a garden, and a parking space. It gives buyers a result between the lower flats and the larger Redland house.",
+        "Interior size is a sample figure, not a surveyor’s measurement."
+      ],
+      "features": [
+        "Garden",
+        "Parking space (sample)",
+        "Three bedrooms (sample)",
+        "Two bathrooms (sample)",
+        "One reception room (sample)"
+      ],
+      "locationNote": "Bishopston is north of Redland, around Gloucester Road. Bus routes and school catchments are not listed.",
+      "added": "2026-10-22",
+      "images": [
+        {
+          "src": "images/modern/10.jpg",
+          "alt": "Stand-in photograph of a kitchen with grey cabinets, white tile, and marble worktops. Not this listing."
+        },
+        {
+          "src": "images/modern/11.jpg",
+          "alt": "Stand-in photograph of a bedroom with a white upholstered bed, grey curtains, and a city view. Not this listing."
+        },
+        {
+          "src": "images/modern/12.jpg",
+          "alt": "Stand-in photograph of an open-plan room with a tan leather sofa and a kitchen behind it. Not this listing."
+        }
+      ]
+    },
+    {
+      "id": "lq-2409",
+      "featured": false,
+      "market": "let",
+      "status": "let-agreed",
+      "propertyType": "flat",
+      "tenure": "Assured tenancy (sample, not an offer)",
+      "price": 1250,
+      "beds": 2,
+      "baths": 1,
+      "receptions": 1,
+      "interiorSqm": 58,
+      "garden": false,
+      "parking": false,
+      "area": "Easton",
+      "postcodeDistrict": "BS5",
+      "title": "Two-bedroom flat in Easton",
+      "summary": "Marked let agreed in the sample data, so you can see that status and hide it with a filter.",
+      "description": [
+        "This Easton flat is marked let agreed. In the demo that means it still has a page, and the enquiry form explains that a viewing is unlikely.",
+        "The status is sample data. It does not record a real application or a holding deposit."
+      ],
+      "features": [
+        "Two bedrooms (sample)",
+        "One bathroom (sample)",
+        "No garden",
+        "No parking",
+        "Sample status: let agreed"
+      ],
+      "locationNote": "Easton is east of the centre, around Stapleton Road. This sample names the area only.",
+      "added": "2026-09-14",
+      "images": [
+        {
+          "src": "images/modern/01.jpg",
+          "alt": "Stand-in photograph of a modern living room with a brown leather sofa, white chairs, and a grid of framed photos. Not this listing."
+        },
+        {
+          "src": "images/modern/02.jpg",
+          "alt": "Stand-in photograph of a contemporary timber house at dusk, with a lawn and a lit open-plan room. Not this listing."
+        },
+        {
+          "src": "images/modern/03.jpg",
+          "alt": "Stand-in photograph of a modern timber and white house with a black screen wall and a paved drive. Not this listing."
+        }
+      ]
+    },
+    {
+      "id": "lq-2410",
+      "featured": false,
+      "market": "sale",
+      "status": "under-offer",
+      "propertyType": "house",
+      "tenure": "Freehold (sample)",
+      "price": 1450000,
+      "beds": 5,
+      "baths": 3,
+      "receptions": 3,
+      "interiorSqm": 240,
+      "garden": true,
+      "parking": false,
+      "area": "Cotham",
+      "postcodeDistrict": "BS6",
+      "title": "Five-bedroom house in Cotham",
+      "summary": "The highest sample sale price, marked under offer so the status label can be reviewed.",
+      "description": [
+        "This sample is a five-bedroom Cotham house with three reception rooms, three bathrooms, and a garden. It is marked under offer.",
+        "On a real instruction, under offer usually means a sale is being negotiated and the seller may still consider other interest. This demo does not represent a negotiation."
+      ],
+      "features": [
+        "Five bedrooms (sample)",
+        "Three reception rooms (sample)",
+        "Garden",
+        "Three bathrooms (sample)",
+        "No parking in this sample",
+        "Sample status: under offer"
+      ],
+      "locationNote": "Cotham lies between Clifton and Redland. This page does not describe a specific terrace or square.",
+      "added": "2026-11-06",
+      "images": [
+        {
+          "src": "images/modern/04.jpg",
+          "alt": "Stand-in photograph of an open-plan living room with a pale sofa, a kitchen island, and timber wall panels. Not this listing."
+        },
+        {
+          "src": "images/modern/05.jpg",
+          "alt": "Stand-in photograph of a modern facade with a white perforated screen and pale timber cladding. Not this listing."
+        },
+        {
+          "src": "images/modern/06.jpg",
+          "alt": "Stand-in photograph of a living room with grey sofas, a dark coffee table, and open shelving. Not this listing."
+        }
+      ]
+    },
+    {
+      "id": "lq-2411",
+      "featured": false,
+      "market": "let",
+      "status": "to-let",
+      "propertyType": "house",
+      "tenure": "Assured tenancy (sample, not an offer)",
+      "price": 1600,
+      "beds": 2,
+      "baths": 1,
+      "receptions": 1,
+      "interiorSqm": 82,
+      "garden": true,
+      "parking": false,
+      "area": "St Werburgh's",
+      "postcodeDistrict": "BS2",
+      "title": "Two-bedroom house in St Werburgh’s",
+      "summary": "A sample two-bedroom letting with a garden, between the Easton flat and the Bedminster house in price.",
+      "description": [
+        "St Werburgh’s is included so the demo covers a smaller house to rent, not only flats. The sample has two bedrooms, one reception room, and a garden.",
+        "Furnishing, the length of the term, and whether a sharer would be accepted are all unset."
+      ],
+      "features": [
+        "Garden",
+        "Two bedrooms (sample)",
+        "One reception room (sample)",
+        "Street parking only (sample)",
+        "Furnishing not specified"
+      ],
+      "locationNote": "St Werburgh’s is north-east of the centre, beside the M32 corridor. Noise and parking pressure are not assessed here.",
+      "added": "2026-10-04",
+      "images": [
+        {
+          "src": "images/modern/07.jpg",
+          "alt": "Stand-in photograph of a bright living room with a pale sofa, a timber staircase, and floor-to-ceiling windows. Not this listing."
+        },
+        {
+          "src": "images/modern/08.jpg",
+          "alt": "Stand-in photograph of a living room with a grey sofa, a timber coffee table, and a long window. Not this listing."
+        },
+        {
+          "src": "images/modern/09.jpg",
+          "alt": "Stand-in photograph of a living room with a cream corner sofa and a gallery wall. Not this listing."
+        }
+      ]
+    },
+    {
+      "id": "lq-2412",
+      "featured": false,
+      "market": "sale",
+      "status": "for-sale",
+      "propertyType": "flat",
+      "tenure": "Leasehold (sample)",
+      "price": 275000,
+      "beds": 1,
+      "baths": 1,
+      "receptions": 1,
+      "interiorSqm": 48,
+      "garden": false,
+      "parking": true,
+      "area": "Long Ashton",
+      "postcodeDistrict": "BS41",
+      "title": "One-bedroom flat in Long Ashton",
+      "summary": "The lowest sample sale price, just outside the city, with a parking space and no garden.",
+      "description": [
+        "Long Ashton is the sample’s edge of the service area, in North Somerset rather than the city itself. This one-bedroom flat is the most affordable sale in the demo and includes a parking space.",
+        "It is useful for testing a low maximum price. It is not a flat on the market."
+      ],
+      "features": [
+        "Parking space (sample)",
+        "One bedroom (sample)",
+        "No garden",
+        "Outside the city boundary (sample)",
+        "Service charge not stated"
+      ],
+      "locationNote": "Long Ashton is south-west of Bristol, beyond the Ashton Gate side of the river. Commute times are not given.",
+      "added": "2026-08-19",
+      "images": [
+        {
+          "src": "images/modern/10.jpg",
+          "alt": "Stand-in photograph of a kitchen with grey cabinets, white tile, and marble worktops. Not this listing."
+        },
+        {
+          "src": "images/modern/11.jpg",
+          "alt": "Stand-in photograph of a bedroom with a white upholstered bed, grey curtains, and a city view. Not this listing."
+        },
+        {
+          "src": "images/modern/12.jpg",
+          "alt": "Stand-in photograph of an open-plan room with a tan leather sofa and a kitchen behind it. Not this listing."
+        }
+      ]
+    }
+  ]
+}
