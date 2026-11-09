@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop · Precious and Things</title>
+  <meta name="description" content="Browse the sample catalog of dresses, shirts, watches, shoes, slippers, and heels.">
+  <link rel="stylesheet" href="css/styles.css?v=6">
+</head>
+<body>
+  <main id="main" class="section">
+    <p class="eyebrow">Sample catalog</p>
+    <h1 data-shop-title>The shop</h1>
+    <p data-shop-note></p>
+    <div class="toolbar">
+      <div class="chips" data-filters role="group" aria-label="Category"></div>
+      <div class="shop-search">
+        <label for="shop-q">Search</label>
+        <input id="shop-q" data-shop-search type="search" placeholder="Name or description">
+      </div>
+      <div class="sort-row">
+        <label for="sort">Sort</label>
+        <select id="sort" data-sort>
+          <option value="featured">Featured</option>
+          <option value="newest">Newest</option>
+          <option value="price-asc">Price, low to high</option>
+          <option value="price-desc">Price, high to low</option>
+        </select>
+      </div>
+    </div>
+    <div class="refine">
+      <div class="sort-row">
+        <label for="color">Colour</label>
+        <select id="color" data-color></select>
+      </div>
+      <div class="sort-row">
+        <label for="size">Size</label>
+        <select id="size" data-size></select>
+      </div>
+      <div class="sort-row">
+        <label for="min">Price from</label>
+        <input id="min" data-min type="number" min="0" inputmode="decimal" placeholder="0">
+      </div>
+      <div class="sort-row">
+        <label for="max">Price to</label>
+        <input id="max" data-max type="number" min="0" inputmode="decimal" placeholder="Any">
+      </div>
+    </div>
+    <div class="grid" data-grid></div>
+    <div class="empty-panel" data-empty hidden>
+      <h2>No pieces match</h2>
+      <p>Try another word, colour, size, or price, or clear the filters to see the full sample catalog.</p>
+    </div>
+  </main>
+  <script type="module" src="js/shop.js?v=4"></script>
+</body>
+</html>

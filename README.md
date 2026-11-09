@@ -1,32 +1,46 @@
-# Linden & Quay
+# Precious and Things
 
-Demonstration website for a fictional Bristol estate agency. Listings, staff, and contact details are sample content.
+A sample storefront for a women’s boutique. It is a static site: HTML, CSS, and a few JavaScript modules. There is no build step and no package install.
 
-## Run
+The catalog, prices, stock, announcement, and policies are placeholders. They are not the boutique’s live facts.
+
+## Run it
 
 From this folder:
 
 ```bash
-ruby -run -ehttpd . -p 8080
+python3 -m http.server 8080
 ```
 
-Open http://127.0.0.1:8080
+Open [http://localhost:8080](http://localhost:8080). Use a local server so the product data can load. Opening the HTML files directly will leave the shop empty.
 
-The pages use ES modules, so open them through a local server rather than as files.
+## Edit the shop
 
-## Replace before a real launch
+| What | Where |
+| --- | --- |
+| Name, currency, locale, announcement, contact placeholders | `data/store.json` |
+| Products, prices, sizes, colours, stock, copy, image paths | `data/products.json` |
+| Photographs | `images/products/` and `images/brand/` |
+| Colours and type | `css/styles.css` |
 
-- `data/properties.json` — the only catalogue. Prices are GBP. Dates are `YYYY-MM-DD`.
-- Company name, phone, email, and address. Search for `0117 496 0148` and `hello@lindenandquay.example`.
-- The sample banner at the top of each page, and the `noindex` meta tag.
-- `https://lindenandquay.example` in the social metadata.
-- Photographs. The contemporary stand-ins are listed in `data/image-credits.json`.
-- Agent profiles on `about.html`. None are invented.
+Prices are minor units of the currency in `data/store.json`. With `USD`, `16800` displays as $168.00. Change `currency` and `locale` together if the boutique sells in another currency. The site does not assume a country or a shipping region.
 
-## Not connected
+Apparel uses letter sizes. Footwear uses EU sizes. Watches use an empty `sizes` array, so the product page does not ask for a size.
 
-- Forms do not send email. The hook is the comment at the top of `js/forms.js`.
-- There is no property pin. The hook is the comment in `js/property.js`.
-- There is no analytics.
+## Before accepting orders
 
-The phone number is in the Ofcom Bristol drama range. The email uses the reserved `.example` domain.
+- Replace the sample catalog and photographs with the studio’s own.
+- Rewrite the announcement, about page, privacy page, and terms.
+- Put a real email and address in `data/store.json` and on the contact page.
+- Connect a payment provider (Stripe, Shopify, or similar) at checkout. Do not add a form that collects card numbers.
+- Connect newsletter and contact forms to a real service. They currently only validate on the page.
+- Connect accounts if you want sign-in. The account button explains that none is configured.
+- Confirm shipping and tax rules, then show real rates. This demo leaves them unpriced on purpose.
+
+The bag is stored in this browser under the key `precious-cart`. Saved pieces use `precious-wishlist`. Clearing site data empties both.
+
+Other sample pages: `wishlist.html`, `size-guide.html`, `journal.html`, and `track.html`. The message button does not reach anyone. Order lookup cannot find a shipment, because this shop does not create orders.
+
+## Photographs
+
+Product and brand images are stock photographs from Unsplash and Pexels, saved locally so the shop does not depend on those CDNs at view time. Replace them before launch. Credits and source pages are in `data/image-credits.json`.

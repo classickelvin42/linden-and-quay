@@ -20,6 +20,10 @@ function startOfToday() {
 function messageFor(field) {
   const value = field.value.trim();
   const label = field.dataset.label || "This field";
+  if (field.type === "checkbox") {
+    if (field.required && !field.checked) return "Tick the box to confirm you understand.";
+    return "";
+  }
   if (field.type === "email") {
     if (!value) return `Enter your email address.`;
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) return "Enter an email address like name@example.com.";

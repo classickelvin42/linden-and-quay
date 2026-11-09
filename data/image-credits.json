@@ -1,62 +1,31 @@
-[
-  {
-    "file": "images/modern/01.jpg",
-    "description": "Modern living room with a brown leather sofa, white chairs, and a grid of framed photos.",
-    "source": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0"
-  },
-  {
-    "file": "images/modern/02.jpg",
-    "description": "Contemporary timber house at dusk, with a lawn and a lit open-plan room.",
-    "source": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
-  },
-  {
-    "file": "images/modern/03.jpg",
-    "description": "Modern timber and white house with a black screen wall and a paved drive.",
-    "source": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3"
-  },
-  {
-    "file": "images/modern/04.jpg",
-    "description": "Open-plan living room with a pale sofa, a kitchen island, and timber wall panels.",
-    "source": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"
-  },
-  {
-    "file": "images/modern/05.jpg",
-    "description": "Modern facade with a white perforated screen and pale timber cladding.",
-    "source": "https://images.unsplash.com/photo-1600573472592-401b489a3cdc"
-  },
-  {
-    "file": "images/modern/06.jpg",
-    "description": "Living room with grey sofas, a dark coffee table, and open shelving.",
-    "source": "https://images.unsplash.com/photo-1600121848594-d8644e57abab"
-  },
-  {
-    "file": "images/modern/07.jpg",
-    "description": "Bright living room with a pale sofa, a timber staircase, and floor-to-ceiling windows.",
-    "source": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea"
-  },
-  {
-    "file": "images/modern/08.jpg",
-    "description": "Living room with a grey sofa, a timber coffee table, and a long horizontal window.",
-    "source": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6"
-  },
-  {
-    "file": "images/modern/09.jpg",
-    "description": "Living room with a cream corner sofa and a gallery wall.",
-    "source": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace"
-  },
-  {
-    "file": "images/modern/10.jpg",
-    "description": "Kitchen with grey cabinets, white tile, and marble worktops.",
-    "source": "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4"
-  },
-  {
-    "file": "images/modern/11.jpg",
-    "description": "Bedroom with a white upholstered bed, grey curtains, and a city view.",
-    "source": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0"
-  },
-  {
-    "file": "images/modern/12.jpg",
-    "description": "Open-plan room with a tan leather sofa and a kitchen in the background.",
-    "source": "https://images.unsplash.com/photo-1554995207-c18c203602cb"
-  }
-]
+{
+  "note": "Stock photographs used as sample product and brand images. Replace them before launch.",
+  "sources": [
+    { "file": "images/brand/rack.jpg", "source": "Unsplash", "page": "https://unsplash.com/photos/assorted-clothes-on-wooden-hangers-9F8mHbq9b1c" },
+    { "file": "images/products/plum-column.jpg", "source": "Unsplash", "photo": "https://unsplash.com/photos/woman-in-purple-dress-1595777457583" },
+    { "file": "images/products/garden-midi.jpg", "source": "Unsplash", "photo": "https://unsplash.com/photos/woman-in-red-dress-1572804013309" },
+    { "file": "images/products/eyelet-mini.jpg", "source": "Unsplash", "photo": "https://unsplash.com/photos/woman-in-white-dress-1515372039744" },
+    { "file": "images/products/rose-wrap.jpg", "source": "Unsplash", "photo": "https://unsplash.com/photos/woman-in-floral-dress-1496747611176" },
+    { "file": "images/products/indigo-lace.jpg", "source": "Unsplash", "photo": "https://unsplash.com/photos/woman-in-blue-lace-1551803091" },
+    { "file": "images/products/saffron-rib.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/1055691/" },
+    { "file": "images/products/ivory-poplin.jpg", "source": "Unsplash", "photo": "https://unsplash.com/photos/woman-in-white-shirt-1551163943" },
+    { "file": "images/products/draped-shirt.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/1926769/" },
+    { "file": "images/products/cotton-tee.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/6311652/" },
+    { "file": "images/products/sand-tunic.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/5709665/" },
+    { "file": "images/products/slate-chrono.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/190819/" },
+    { "file": "images/products/blush-mesh.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/px7 local copy of an unbranded mesh watch lifestyle photo" },
+    { "file": "images/products/blush-knit.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/2731977/" },
+    { "file": "images/products/platform-boot.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/2043590/" },
+    { "file": "images/products/cloud-slipper.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/6633376/" },
+    { "file": "images/products/morning-slipper.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/6976016/" },
+    { "file": "images/products/plush-slide.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/6976560/" },
+    { "file": "images/products/ivory-pump.jpg", "source": "Unsplash", "photo": "https://unsplash.com/photos/pair-of-white-heels-1535043934128" },
+    { "file": "images/products/emerald-heel.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/3782786/" },
+    { "file": "images/products/black-sandal.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/3782788/" },
+    { "file": "images/products/navy-pump.jpg", "source": "Unsplash stock download, navy suede pumps" },
+    { "file": "images/products/nude-platform.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/1445696/" },
+    { "file": "images/products/scarlet-pump.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/336372/" },
+    { "file": "images/brand/atelier.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/7679863/" },
+    { "file": "images/brand/rail.jpg", "source": "Pexels", "page": "https://www.pexels.com/photo/7679720/" }
+  ]
+}

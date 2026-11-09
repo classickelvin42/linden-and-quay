@@ -1,0 +1,18 @@
+{
+  "name": "Precious and Things",
+  "tagline": "A women’s boutique for dresses, shirts, watches, and shoes.",
+  "currency": "USD",
+  "locale": "en-US",
+  "announcement": "Sample boutique — replace this announcement in data/store.json before launch.",
+  "contactEmailPlaceholder": "hello@example.com",
+  "contactNote": "Replace this placeholder with the studio’s real email before launch.",
+  "addressNote": "Add the studio address here before launch.",
+  "categories": [
+    { "id": "dresses", "name": "Dresses", "image": "images/products/rose-wrap.jpg", "blurb": "Column, wrap, and evening dresses." },
+    { "id": "shirts", "name": "Shirts", "image": "images/products/draped-shirt.jpg", "blurb": "Poplin, linen, and easy cotton." },
+    { "id": "watches", "name": "Watches", "image": "images/products/slate-chrono.jpg", "blurb": "Quiet faces for everyday wear." },
+    { "id": "shoes", "name": "Shoes", "image": "images/products/blush-knit.jpg", "blurb": "Sneakers and boots for the day." },
+    { "id": "slippers", "name": "Slippers", "image": "images/products/plush-slide.jpg", "blurb": "Soft slides for home." },
+    { "id": "heels", "name": "Heels", "image": "images/products/emerald-heel.jpg", "blurb": "Pumps and sandals after dark." }
+  ]
+}

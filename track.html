@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Track an order · Precious and Things</title>
+  <meta name="description" content="Order lookup for Precious and Things. This sample shop does not create orders.">
+  <link rel="stylesheet" href="css/styles.css?v=6">
+</head>
+<body>
+  <main id="main" class="page prose">
+    <p class="eyebrow">Orders</p>
+    <h1>Track an order</h1>
+    <p>This sample shop does not place orders or create shipments. A reference entered here cannot match a delivery, because none exist yet.</p>
+    <form data-track novalidate>
+      <div class="error-summary" tabindex="-1" hidden><p>Please fix the following:</p><ul></ul></div>
+      <label for="ref">Order reference</label>
+      <input id="ref" name="reference" required minlength="4" data-label="Order reference" autocomplete="off">
+      <p class="field-error" id="ref-error" hidden></p>
+      <button class="btn" type="submit">Look up</button>
+    </form>
+    <div class="empty-panel" data-track-result tabindex="-1" hidden>
+      <h2>No order found</h2>
+      <p data-track-copy></p>
+    </div>
+  </main>
+  <script type="module" src="js/track.js?v=4"></script>
+</body>
+</html>

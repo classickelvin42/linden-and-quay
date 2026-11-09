@@ -1,0 +1,648 @@
+{
+  "note": "SAMPLE CATALOG. Names, prices, descriptions, and stock are invented for this demo. Replace this file and the images in images/products/ before launch. Prices are minor units of the currency set in data/store.json (cents when currency is USD).",
+  "products": [
+    {
+      "id": "plum-column",
+      "slug": "plum-column-dress",
+      "name": "Plum Column Dress",
+      "category": "dresses",
+      "price": 16800,
+      "compareAt": 19800,
+      "featured": true,
+      "added": "2026-10-28",
+      "inStock": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "An off-the-shoulder column in a deep plum knit, with a wide ribbed neckline and a narrow skirt.",
+      "materials": "Sample copy: stretch knit. Confirm the fibre content with your supplier.",
+      "care": "Sample copy: cool gentle wash, dry flat. Replace with the real care label.",
+      "images": [
+        {
+          "src": "images/products/plum-column.jpg",
+          "alt": "Woman seated in a plum off-the-shoulder column dress against a lilac background."
+        }
+      ],
+      "color": "Plum"
+    },
+    {
+      "id": "garden-midi",
+      "slug": "garden-embroidered-midi",
+      "name": "Garden Embroidered Midi",
+      "category": "dresses",
+      "price": 15400,
+      "compareAt": null,
+      "featured": true,
+      "added": "2026-10-12",
+      "inStock": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "A scarlet midi with gold floral embroidery, a soft V neck, and a full skirt that sits at the waist.",
+      "materials": "Sample copy: embroidered woven cotton blend.",
+      "care": "Sample copy: dry clean only.",
+      "images": [
+        {
+          "src": "images/products/garden-midi.jpg",
+          "alt": "Smiling woman wearing a red midi dress with gold floral embroidery and a woven belt."
+        }
+      ],
+      "color": "Scarlet"
+    },
+    {
+      "id": "eyelet-mini",
+      "slug": "ivory-eyelet-mini",
+      "name": "Ivory Eyelet Mini",
+      "category": "dresses",
+      "price": 12800,
+      "compareAt": null,
+      "featured": false,
+      "added": "2026-09-20",
+      "inStock": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "An ivory off-the-shoulder mini in broderie anglaise, with a smocked waist and a ruffled hem.",
+      "materials": "Sample copy: cotton eyelet.",
+      "care": "Sample copy: cold wash, hang to dry.",
+      "images": [
+        {
+          "src": "images/products/eyelet-mini.jpg",
+          "alt": "Woman standing on outdoor stairs in an ivory off-the-shoulder eyelet mini dress."
+        }
+      ],
+      "color": "Ivory"
+    },
+    {
+      "id": "rose-wrap",
+      "slug": "rose-wrap-dress",
+      "name": "Rose Wrap Dress",
+      "category": "dresses",
+      "price": 14200,
+      "compareAt": null,
+      "featured": true,
+      "added": "2026-11-02",
+      "inStock": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "A cream wrap dress printed with garden roses, tied at the waist, with a walking slit.",
+      "materials": "Sample copy: lightweight viscose.",
+      "care": "Sample copy: cool hand wash.",
+      "images": [
+        {
+          "src": "images/products/rose-wrap.jpg",
+          "alt": "Close view of a cream floral wrap dress with a tie waist, worn beside the sea."
+        }
+      ],
+      "color": "Cream"
+    },
+    {
+      "id": "indigo-lace",
+      "slug": "indigo-lace-dress",
+      "name": "Indigo Lace Dress",
+      "category": "dresses",
+      "price": 22000,
+      "compareAt": null,
+      "featured": false,
+      "added": "2026-08-14",
+      "inStock": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "A long-sleeve indigo lace dress with openwork panels at the waist and a fitted skirt.",
+      "materials": "Sample copy: cotton lace over lining.",
+      "care": "Sample copy: dry clean.",
+      "images": [
+        {
+          "src": "images/products/indigo-lace.jpg",
+          "alt": "Woman outdoors wearing a long indigo lace dress with cutouts at the waist."
+        }
+      ],
+      "color": "Indigo"
+    },
+    {
+      "id": "saffron-rib",
+      "slug": "saffron-rib-dress",
+      "name": "Saffron Rib Dress",
+      "category": "dresses",
+      "price": 11800,
+      "compareAt": 13600,
+      "featured": false,
+      "added": "2026-11-05",
+      "inStock": false,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "A close ribbed knit dress in saffron, with a high neck, long sleeves, and a small chest pocket.",
+      "materials": "Sample copy: ribbed knit.",
+      "care": "Sample copy: cold wash inside out.",
+      "images": [
+        {
+          "src": "images/products/saffron-rib.jpg",
+          "alt": "Woman seated on steps in a saffron ribbed knit midi dress and grey ankle boots."
+        }
+      ],
+      "color": "Saffron"
+    },
+    {
+      "id": "ivory-poplin",
+      "slug": "ivory-poplin-shirt",
+      "name": "Ivory Poplin Shirt",
+      "category": "shirts",
+      "price": 8600,
+      "compareAt": null,
+      "featured": true,
+      "added": "2026-10-02",
+      "inStock": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "A crisp ivory poplin shirt with a soft collar, chest pocket, and sleeves meant to be rolled.",
+      "materials": "Sample copy: cotton poplin.",
+      "care": "Sample copy: warm iron while slightly damp.",
+      "images": [
+        {
+          "src": "images/products/ivory-poplin.jpg",
+          "alt": "Woman seated on a stool wearing an ivory button-up shirt, a beige pleated skirt, and taupe heels."
+        }
+      ],
+      "color": "Ivory"
+    },
+    {
+      "id": "draped-shirt",
+      "slug": "draped-ivory-shirt",
+      "name": "Draped Ivory Shirt",
+      "category": "shirts",
+      "price": 9800,
+      "compareAt": null,
+      "featured": true,
+      "added": "2026-11-01",
+      "inStock": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "An oversized ivory shirt worn open, with a dropped shoulder and a fluid hem.",
+      "materials": "Sample copy: washed cotton.",
+      "care": "Sample copy: machine wash cold.",
+      "images": [
+        {
+          "src": "images/products/draped-shirt.jpg",
+          "alt": "Woman in studio light wearing an oversized ivory shirt over a peach slip dress."
+        }
+      ],
+      "color": "Ivory"
+    },
+    {
+      "id": "cotton-tee",
+      "slug": "clean-cotton-tee",
+      "name": "Clean Cotton Tee",
+      "category": "shirts",
+      "price": 4200,
+      "compareAt": null,
+      "featured": false,
+      "added": "2026-09-01",
+      "inStock": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "A plain white cotton tee with a neat crew neck and a slightly cropped hem.",
+      "materials": "Sample copy: organic cotton jersey.",
+      "care": "Sample copy: wash with similar colours.",
+      "images": [
+        {
+          "src": "images/products/cotton-tee.jpg",
+          "alt": "Smiling woman holding the hem of a plain white short-sleeve t-shirt."
+        }
+      ],
+      "color": "White"
+    },
+    {
+      "id": "sand-tunic",
+      "slug": "sand-linen-tunic",
+      "name": "Sand Linen Tunic",
+      "category": "shirts",
+      "price": 9200,
+      "compareAt": null,
+      "featured": false,
+      "added": "2026-07-18",
+      "inStock": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "A sleeveless sand linen tunic with a short button placket and a single patch pocket.",
+      "materials": "Sample copy: linen.",
+      "care": "Sample copy: wash cold and expect gentle creasing.",
+      "images": [
+        {
+          "src": "images/products/sand-tunic.jpg",
+          "alt": "Two people looking at a sand-coloured sleeveless linen tunic on a wooden hanger."
+        }
+      ],
+      "color": "Sand"
+    },
+    {
+      "id": "slate-chrono",
+      "slug": "slate-chronograph",
+      "name": "Slate Chronograph",
+      "category": "watches",
+      "price": 18600,
+      "compareAt": null,
+      "featured": true,
+      "added": "2026-10-22",
+      "inStock": true,
+      "sizes": [],
+      "description": "A steel chronograph with a slate dial, gold-tone hands, and a linked bracelet. No size is required.",
+      "materials": "Sample copy: stainless steel case and bracelet.",
+      "care": "Sample copy: wipe with a soft cloth. Avoid perfume.",
+      "images": [
+        {
+          "src": "images/products/slate-chrono.jpg",
+          "alt": "Steel chronograph watch with a dark dial and gold hands resting on wood."
+        }
+      ],
+      "color": "Slate"
+    },
+    {
+      "id": "blush-mesh",
+      "slug": "blush-mesh-watch",
+      "name": "Blush Mesh Watch",
+      "category": "watches",
+      "price": 12400,
+      "compareAt": 14800,
+      "featured": false,
+      "added": "2026-11-04",
+      "inStock": true,
+      "sizes": [],
+      "description": "A slim blush-metal watch on a fine mesh band, with a pale dial and stick markers.",
+      "materials": "Sample copy: plated case and mesh band.",
+      "care": "Sample copy: keep away from water unless your supplier confirms otherwise.",
+      "images": [
+        {
+          "src": "images/products/blush-mesh.jpg",
+          "alt": "Person wearing a slim pale-dial mesh watch with a blush knit sweater."
+        }
+      ],
+      "color": "Blush"
+    },
+    {
+      "id": "blush-knit",
+      "slug": "blush-knit-sneaker",
+      "name": "Blush Knit Sneaker",
+      "category": "shoes",
+      "price": 11000,
+      "compareAt": null,
+      "featured": true,
+      "added": "2026-10-18",
+      "inStock": true,
+      "sizes": [
+        "EU 36",
+        "EU 37",
+        "EU 38",
+        "EU 39",
+        "EU 40",
+        "EU 41"
+      ],
+      "description": "A light blush knit sneaker with a pale sole, made for long days on foot.",
+      "materials": "Sample copy: knit upper, rubber sole.",
+      "care": "Sample copy: wipe clean. Do not machine wash.",
+      "images": [
+        {
+          "src": "images/products/blush-knit.jpg",
+          "alt": "Pink knit sneakers worn with black trousers, next to a small bouquet."
+        }
+      ],
+      "color": "Blush"
+    },
+    {
+      "id": "platform-boot",
+      "slug": "suede-platform-boot",
+      "name": "Suede Platform Boot",
+      "category": "shoes",
+      "price": 16400,
+      "compareAt": null,
+      "featured": false,
+      "added": "2026-09-28",
+      "inStock": true,
+      "sizes": [
+        "EU 36",
+        "EU 37",
+        "EU 38",
+        "EU 39",
+        "EU 40",
+        "EU 41"
+      ],
+      "description": "A black suede ankle boot with a broad platform and a stacked block heel.",
+      "materials": "Sample copy: suede upper.",
+      "care": "Sample copy: brush with a suede brush. Protect from rain.",
+      "images": [
+        {
+          "src": "images/products/platform-boot.jpg",
+          "alt": "Woman in a pink coat and black dress wearing black suede platform ankle boots."
+        }
+      ],
+      "color": "Black"
+    },
+    {
+      "id": "cloud-slipper",
+      "slug": "lilac-cloud-slipper",
+      "name": "Lilac Cloud Slipper",
+      "category": "slippers",
+      "price": 4800,
+      "compareAt": null,
+      "featured": true,
+      "added": "2026-11-03",
+      "inStock": true,
+      "sizes": [
+        "EU 36",
+        "EU 37",
+        "EU 38",
+        "EU 39",
+        "EU 40",
+        "EU 41"
+      ],
+      "description": "An open slipper in lilac and cream faux fur, meant for quiet mornings at home.",
+      "materials": "Sample copy: faux fur strap, cushioned footbed.",
+      "care": "Sample copy: spot clean only.",
+      "images": [
+        {
+          "src": "images/products/cloud-slipper.jpg",
+          "alt": "Lilac and cream fuzzy slippers worn with socks on a white rug."
+        }
+      ],
+      "color": "Lilac"
+    },
+    {
+      "id": "morning-slipper",
+      "slug": "taupe-morning-slipper",
+      "name": "Taupe Morning Slipper",
+      "category": "slippers",
+      "price": 5200,
+      "compareAt": null,
+      "featured": false,
+      "added": "2026-08-30",
+      "inStock": true,
+      "sizes": [
+        "EU 36",
+        "EU 37",
+        "EU 38",
+        "EU 39",
+        "EU 40",
+        "EU 41"
+      ],
+      "description": "A taupe faux-fur slide with a wide crossed strap and a soft footbed.",
+      "materials": "Sample copy: faux fur.",
+      "care": "Sample copy: spot clean. Air dry.",
+      "images": [
+        {
+          "src": "images/products/morning-slipper.jpg",
+          "alt": "Person in grey loungewear wearing taupe fluffy slide slippers."
+        }
+      ],
+      "color": "Taupe"
+    },
+    {
+      "id": "plush-slide",
+      "slug": "ivory-plush-slide",
+      "name": "Ivory Plush Slide",
+      "category": "slippers",
+      "price": 4600,
+      "compareAt": 5800,
+      "featured": false,
+      "added": "2026-10-08",
+      "inStock": true,
+      "sizes": [
+        "EU 36",
+        "EU 37",
+        "EU 38",
+        "EU 39",
+        "EU 40",
+        "EU 41"
+      ],
+      "description": "An ivory ribbed plush slide with a crossed strap, light enough for indoors.",
+      "materials": "Sample copy: plush textile.",
+      "care": "Sample copy: spot clean.",
+      "images": [
+        {
+          "src": "images/products/plush-slide.jpg",
+          "alt": "Ivory fluffy cross-strap slides worn with pale blue trousers on a woven rug."
+        }
+      ],
+      "color": "Ivory"
+    },
+    {
+      "id": "ivory-pump",
+      "slug": "ivory-textured-pump",
+      "name": "Ivory Textured Pump",
+      "category": "heels",
+      "price": 13800,
+      "compareAt": null,
+      "featured": true,
+      "added": "2026-10-30",
+      "inStock": true,
+      "sizes": [
+        "EU 36",
+        "EU 37",
+        "EU 38",
+        "EU 39",
+        "EU 40",
+        "EU 41"
+      ],
+      "description": "A pointed ivory pump with a fine pebbled texture and a slim heel.",
+      "materials": "Sample copy: textured leather.",
+      "care": "Sample copy: wipe with a dry cloth.",
+      "images": [
+        {
+          "src": "images/products/ivory-pump.jpg",
+          "alt": "Pair of ivory pointed pumps on a dark wooden surface in front of a bright window."
+        }
+      ],
+      "color": "Ivory"
+    },
+    {
+      "id": "emerald-heel",
+      "slug": "emerald-strap-heel",
+      "name": "Emerald Strap Heel",
+      "category": "heels",
+      "price": 14600,
+      "compareAt": null,
+      "featured": true,
+      "added": "2026-11-06",
+      "inStock": true,
+      "sizes": [
+        "EU 36",
+        "EU 37",
+        "EU 38",
+        "EU 39",
+        "EU 40",
+        "EU 41"
+      ],
+      "description": "An emerald satin sandal with a thin toe strap, an ankle buckle, and a narrow heel.",
+      "materials": "Sample copy: satin upper.",
+      "care": "Sample copy: store in a dust bag. Avoid water.",
+      "images": [
+        {
+          "src": "images/products/emerald-heel.jpg",
+          "alt": "Emerald green strappy high-heeled sandals arranged on a white surface with flowers."
+        }
+      ],
+      "color": "Emerald"
+    },
+    {
+      "id": "black-sandal",
+      "slug": "black-satin-sandal",
+      "name": "Black Satin Sandal",
+      "category": "heels",
+      "price": 13200,
+      "compareAt": null,
+      "featured": false,
+      "added": "2026-09-12",
+      "inStock": true,
+      "sizes": [
+        "EU 36",
+        "EU 37",
+        "EU 38",
+        "EU 39",
+        "EU 40",
+        "EU 41"
+      ],
+      "description": "A black satin sandal with crossed straps and a small ankle buckle.",
+      "materials": "Sample copy: satin.",
+      "care": "Sample copy: spot clean. Stuff with tissue when stored.",
+      "images": [
+        {
+          "src": "images/products/black-sandal.jpg",
+          "alt": "Black satin strappy heels laid on white tulle with a single flower."
+        }
+      ],
+      "color": "Black"
+    },
+    {
+      "id": "navy-pump",
+      "slug": "navy-suede-pump",
+      "name": "Navy Suede Pump",
+      "category": "heels",
+      "price": 12800,
+      "compareAt": null,
+      "featured": false,
+      "added": "2026-08-02",
+      "inStock": true,
+      "sizes": [
+        "EU 36",
+        "EU 37",
+        "EU 38",
+        "EU 39",
+        "EU 40",
+        "EU 41"
+      ],
+      "description": "A rounded navy suede pump with a covered heel and a nude sole edge.",
+      "materials": "Sample copy: suede.",
+      "care": "Sample copy: brush gently. Use a protector if your supplier recommends one.",
+      "images": [
+        {
+          "src": "images/products/navy-pump.jpg",
+          "alt": "A hand holding a pair of navy suede pumps by the heels."
+        }
+      ],
+      "color": "Navy"
+    },
+    {
+      "id": "nude-platform",
+      "slug": "nude-bow-platform",
+      "name": "Nude Bow Platform",
+      "category": "heels",
+      "price": 15200,
+      "compareAt": null,
+      "featured": false,
+      "added": "2026-07-04",
+      "inStock": true,
+      "sizes": [
+        "EU 36",
+        "EU 37",
+        "EU 38",
+        "EU 39",
+        "EU 40",
+        "EU 41"
+      ],
+      "description": "A nude peep-toe platform with a small bow and a covered block heel.",
+      "materials": "Sample copy: smooth synthetic upper.",
+      "care": "Sample copy: wipe clean.",
+      "images": [
+        {
+          "src": "images/products/nude-platform.jpg",
+          "alt": "Nude peep-toe platform heels with bows, set on white fabric."
+        }
+      ],
+      "color": "Nude"
+    },
+    {
+      "id": "scarlet-pump",
+      "slug": "scarlet-patent-pump",
+      "name": "Scarlet Patent Pump",
+      "category": "heels",
+      "price": 15800,
+      "compareAt": 17600,
+      "featured": false,
+      "added": "2026-11-07",
+      "inStock": true,
+      "sizes": [
+        "EU 36",
+        "EU 37",
+        "EU 38",
+        "EU 39",
+        "EU 40",
+        "EU 41"
+      ],
+      "description": "A pointed scarlet patent pump with a tall slim heel and a pale leather lining.",
+      "materials": "Sample copy: patent finish.",
+      "care": "Sample copy: wipe with a damp cloth and dry immediately.",
+      "images": [
+        {
+          "src": "images/products/scarlet-pump.jpg",
+          "alt": "Shiny red pointed high heels on a white display table."
+        }
+      ],
+      "color": "Scarlet"
+    }
+  ]
+}
