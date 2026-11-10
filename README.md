@@ -9,10 +9,10 @@ The catalog, prices, stock, announcement, and policies are placeholders. They ar
 From this folder:
 
 ```bash
-python3 -m http.server 8080
+python3 server.py
 ```
 
-Open [http://localhost:8080](http://localhost:8080). Use a local server so the product data can load. Opening the HTML files directly will leave the shop empty.
+Open [http://127.0.0.1:8080](http://127.0.0.1:8080). The shop server loads the catalog and stores orders, contact messages, and newsletter emails in `data/shop.db`. Opening the HTML files directly will leave the shop empty and the forms unable to save.
 
 ## Edit the shop
 
@@ -33,13 +33,13 @@ Apparel uses letter sizes. Footwear uses EU sizes. Watches use an empty `sizes` 
 - Rewrite the announcement, about page, privacy page, and terms.
 - Put a real email and address in `data/store.json` and on the contact page.
 - Connect a payment provider (Stripe, Shopify, or similar) at checkout. Do not add a form that collects card numbers.
-- Connect newsletter and contact forms to a real service. They currently only validate on the page.
+- Newsletter emails and contact messages are saved in `data/shop.db`. They are not emailed. Connect a mail service before launch if someone should receive them.
 - Connect accounts if you want sign-in. The account button explains that none is configured.
 - Confirm shipping and tax rules, then show real rates. This demo leaves them unpriced on purpose.
 
 The bag is stored in this browser under the key `precious-cart`. Saved pieces use `precious-wishlist`. Clearing site data empties both.
 
-Other sample pages: `wishlist.html`, `size-guide.html`, `journal.html`, and `track.html`. The message button does not reach anyone. Order lookup cannot find a shipment, because this shop does not create orders.
+Other pages: `wishlist.html`, `size-guide.html`, `journal.html`, and `track.html`. Checkout saves an order and returns a reference. Lookup finds that order. Payment is not taken.
 
 ## Photographs
 

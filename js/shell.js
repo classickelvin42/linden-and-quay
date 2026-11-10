@@ -1,7 +1,7 @@
 import { trapTab, focusable } from "./a11y.js";
 import { loadStore, loadProducts, money, categoryName } from "./catalog.js?v=3";
 import { getCart, cartCount, setQty, removeLine, onCartChange } from "./cart.js";
-import { bindForm } from "./forms.js";
+import { bindForm } from "./forms.js?v=5";
 import { getWishlist, toggleWish, onWishChange } from "./wishlist.js";
 
 const ICONS = {
@@ -206,7 +206,18 @@ function bindChrome(store, products) {
   const newsletter = document.querySelector("[data-newsletter]");
   if (newsletter) {
     bindForm(newsletter, {
-      successText: () => "Saved on this page only. This form does not add you to a mailing list."
+      successText: () => "Saved. This email is stored on the shop server. It is not sent to a mailing company.",
+      submit: async (form) => {
+        const data = Object.fromEntries(new FormData(form).entries());
+        const response = await fetch("/api/subscribers", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: data.email.trim(), consent: true })
+        });
+        const payload = await response.json().catch(() => ({}));
+        if (!response.ok) throw new Error(payload.error || "The email could not be saved.");
+        return "Saved. This email is stored on the shop server. It is not sent to a mailing company.";
+      }
     });
   }
   const chat = document.querySelector("[data-chat]");

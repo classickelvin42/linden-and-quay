@@ -1,4 +1,4 @@
-import { mountShell, productCard, toast, escapeHtml, syncWishlistButtons } from "./shell.js?v=4";
+import { mountShell, productCard, toast, escapeHtml, syncWishlistButtons } from "./shell.js?v=5";
 import { money, categoryName, needsSize, relatedProducts } from "./catalog.js?v=3";
 import { addToCart } from "./cart.js";
 

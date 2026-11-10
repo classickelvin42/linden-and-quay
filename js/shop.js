@@ -1,4 +1,4 @@
-import { mountShell, productCard, syncWishlistButtons } from "./shell.js?v=4";
+import { mountShell, productCard, syncWishlistButtons } from "./shell.js?v=5";
 import { filterProducts } from "./catalog.js?v=3";
 
 const { store, products } = await mountShell("shop");

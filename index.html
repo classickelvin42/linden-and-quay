@@ -85,7 +85,7 @@
     <section class="newsletter" aria-labelledby="news-title">
       <div class="newsletter-inner">
         <h2 id="news-title">Notes from the house</h2>
-        <p>Leave an email to preview the form. It does not subscribe you. Connect a mailing service before collecting a real list.</p>
+        <p>Leave an email to store it on this shop server. It is not sent to a mailing company.</p>
         <div>
           <form data-newsletter novalidate>
             <div class="error-summary" tabindex="-1" hidden>
@@ -95,10 +95,10 @@
             <label for="news-email">Email</label>
             <input id="news-email" name="email" type="email" required data-label="Email" autocomplete="email">
             <p class="field-error" id="news-email-error" hidden></p>
-            <label class="consent"><input id="news-consent" name="consent" type="checkbox" required data-label="Consent"> I understand this sample form does not add me to a mailing list.</label>
+            <label class="consent"><input id="news-consent" name="consent" type="checkbox" required data-label="Consent"> I agree to store this email on the shop server.</label>
             <p class="field-error" id="news-consent-error" hidden></p>
             <div class="hp" aria-hidden="true"><label>Company<input name="company" tabindex="-1" autocomplete="off"></label></div>
-            <button class="btn" type="submit">Save on this page</button>
+            <button class="btn" type="submit">Save email</button>
           </form>
           <div class="form-success" tabindex="-1" hidden>
             <p class="success-copy"></p>
@@ -108,6 +108,6 @@
       </div>
     </section>
   </main>
-  <script type="module" src="js/home.js?v=7"></script>
+  <script type="module" src="js/home.js?v=8"></script>
 </body>
 </html>

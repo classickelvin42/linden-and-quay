@@ -1,11 +1,6 @@
 /**
- * FORM INTEGRATION
- * submitDemo() does not send personal data anywhere. To deliver enquiries:
- * 1. Replace submitDemo() with a POST to your own endpoint or a form service.
- * 2. Keep validateForm() so errors still appear before the request.
- * 3. Surface server failures in showError() rather than the demo success panel.
- * 4. Update privacy.html to name the provider, what is stored, and how long.
- * Do not put secret keys in this file. Call a server route that holds them.
+ * Forms validate in the browser, then call the submit function when one is set.
+ * That function posts to the shop server. Secrets stay on the server.
  */
 
 function digits(value) {
@@ -60,6 +55,17 @@ function fields(form) {
   });
 }
 
+function showFormError(form, message) {
+  const summary = form.querySelector(".error-summary");
+  const list = summary.querySelector("ul");
+  list.replaceChildren();
+  const item = document.createElement("li");
+  item.textContent = message;
+  list.append(item);
+  summary.hidden = false;
+  summary.focus();
+}
+
 function showSuccess(form, text) {
   const panel = form.parentElement.querySelector(".form-success");
   const copy = panel.querySelector(".success-copy");
@@ -83,7 +89,7 @@ function clearErrors(form) {
   });
 }
 
-export function bindForm(form, { successText }) {
+export function bindForm(form, { successText, submit }) {
   const summary = form.querySelector(".error-summary");
   const dateField = form.querySelector('input[type="date"]');
   if (dateField) {
@@ -106,7 +112,7 @@ export function bindForm(form, { successText }) {
     }
   });
 
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
     clearErrors(form);
     const honeypot = form.querySelector(".hp input");
@@ -134,7 +140,16 @@ export function bindForm(form, { successText }) {
       summary.focus();
       return;
     }
-    showSuccess(form, successText(form));
+    const button = form.querySelector('[type="submit"]');
+    if (button) button.disabled = true;
+    try {
+      const text = submit ? await submit(form) : successText(form);
+      showSuccess(form, text);
+    } catch (error) {
+      showFormError(form, error.message || "The shop could not save that.");
+    } finally {
+      if (button) button.disabled = false;
+    }
   });
 
   const reset = form.parentElement.querySelector(".reset-form");

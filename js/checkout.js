@@ -1,4 +1,4 @@
-import { mountShell, escapeHtml } from "./shell.js?v=4";
+import { mountShell, escapeHtml } from "./shell.js?v=5";
 import { money, categoryName } from "./catalog.js?v=3";
 import { getCart, clearCart, onCartChange } from "./cart.js";
 
@@ -38,11 +38,11 @@ function render() {
     return;
   }
   root.innerHTML = `
-    <p class="demo-banner">Demo checkout. Nothing is charged, and no order is placed. Card details are not collected.</p>
+    <p class="demo-banner">Placing an order saves it on this shop server. Payment is not taken, and card details are not collected.</p>
     <div class="checkout-grid">
       <form class="checkout-form" novalidate>
         <h1>Delivery details</h1>
-        <p>These fields stay in your browser for this preview. They are not sent to a shop or a payment service.</p>
+        <p>These details are saved with the order on this shop server. They are not sent to a payment service.</p>
         <div class="error-summary" tabindex="-1" hidden><p>Please fix the following:</p><ul></ul></div>
         <label for="co-name">Full name</label>
         <input id="co-name" name="name" data-label="Full name" required autocomplete="name">
@@ -53,12 +53,12 @@ function render() {
         <label for="co-address">Address</label>
         <textarea id="co-address" name="address" data-label="Address" required minlength="8" rows="3" autocomplete="street-address"></textarea>
         <p class="field-error" id="co-address-error" hidden></p>
-        <p class="fine">Payment is the integration point. Connect Stripe, Shopify, or another provider here. Do not add a homemade card form.</p>
-        <button class="btn" type="submit">Review demo details</button>
+        <p class="fine">Payment is still the next integration. Connect Stripe or another hosted checkout before charging anyone. Do not add a homemade card form.</p>
+        <button class="btn" type="submit">Place order</button>
       </form>
       <aside class="summary">${summary(items)}</aside>
     </div>`;
-  root.querySelector("form").addEventListener("submit", (event) => {
+  root.querySelector("form").addEventListener("submit", async (event) => {
     event.preventDefault();
     const form = event.currentTarget;
     const problems = [];
@@ -87,26 +87,39 @@ function render() {
       return;
     }
     const data = Object.fromEntries(new FormData(form).entries());
-    root.innerHTML = `
-      <div class="demo-result">
-        <p class="eyebrow">Preview only</p>
-        <h1>No order was placed</h1>
-        <p>This is a demo confirmation. Payment was not taken, stock was not reserved, and ${escapeHtml(data.name)} will not receive a receipt at ${escapeHtml(data.email)}.</p>
-        <p>Delivery preview: ${escapeHtml(data.address)}</p>
-        <div class="summary">${summary(lines())}</div>
-        <p class="fine">To accept real orders, connect a payment provider and replace this page with its hosted checkout. The sample bag can be cleared below so you can keep browsing.</p>
-        <button class="btn" type="button" data-clear>Clear the sample bag</button>
-        <a class="text-link" href="shop.html">Return to the shop</a>
-      </div>`;
-    root.querySelector("[data-clear]").addEventListener("click", () => {
+    const button = form.querySelector('[type="submit"]');
+    button.disabled = true;
+    try {
+      const response = await fetch("/api/orders", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: data.name.trim(),
+          email: data.email.trim(),
+          address: data.address.trim(),
+          items: items.map((line) => ({ id: line.id, size: line.size || "", qty: line.qty }))
+        })
+      });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(payload.error || "The order could not be saved.");
+      const placed = lines();
       clearCart();
       root.innerHTML = `
-        <div class="empty-panel">
-          <h1>Sample bag cleared</h1>
-          <p>No order exists. You can keep browsing the sample catalog.</p>
-          <a class="btn" href="shop.html">Continue shopping</a>
+        <div class="demo-result">
+          <p class="eyebrow">Order ${escapeHtml(payload.reference)}</p>
+          <h1>Order saved</h1>
+          <p>Payment was not taken. Keep this reference to look the order up. A receipt was not emailed to ${escapeHtml(data.email.trim())}.</p>
+          <p>Delivery: ${escapeHtml(data.address.trim())}</p>
+          <div class="summary">${summary(placed)}</div>
+          <a class="btn" href="track.html?ref=${encodeURIComponent(payload.reference)}">Look up this order</a>
+          <a class="text-link" href="shop.html">Return to the shop</a>
         </div>`;
-    });
+    } catch (error) {
+      summaryBox.hidden = false;
+      summaryBox.querySelector("ul").innerHTML = `<li>${escapeHtml(error.message || "The order could not be saved.")}</li>`;
+      summaryBox.focus();
+      button.disabled = false;
+    }
   });
 }
 

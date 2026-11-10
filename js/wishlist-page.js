@@ -1,4 +1,4 @@
-import { mountShell, productCard, syncWishlistButtons } from "./shell.js?v=4";
+import { mountShell, productCard, syncWishlistButtons } from "./shell.js?v=5";
 import { getWishlist, onWishChange } from "./wishlist.js";
 
 const { store, products } = await mountShell("saved");
