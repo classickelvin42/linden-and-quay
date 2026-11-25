@@ -1,4 +1,4 @@
-import { mountShell, productCard, escapeHtml, syncWishlistButtons } from "./shell.js?v=5";
+import { mountShell, productCard, escapeHtml, syncWishlistButtons } from "./shell.js?v=8";
 import { sortProducts } from "./catalog.js?v=3";
 
 const { store, products } = await mountShell("home");
@@ -6,12 +6,12 @@ const newest = sortProducts(products, "newest").slice(0, 4);
 const featured = products.filter((item) => item.featured).slice(0, 4);
 
 document.querySelector("[data-categories]").innerHTML = store.categories.map((category) => `
-  <a class="cat-tile" href="shop.html?category=${category.id}">
-    <img src="${category.image}" alt="">
+  <a class="cat-pill" href="shop.html?category=${category.id}">
     <span>
+      <small>In the shop</small>
       <strong>${escapeHtml(category.name)}</strong>
-      <em>${escapeHtml(category.blurb)}</em>
     </span>
+    <span class="cat-go" aria-hidden="true">→</span>
   </a>`).join("");
 
 document.querySelector("[data-new]").innerHTML = newest.map((item) => productCard(item, store)).join("");

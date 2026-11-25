@@ -1,4 +1,4 @@
-import { mountShell, escapeHtml } from "./shell.js?v=5";
+import { mountShell, escapeHtml } from "./shell.js?v=8";
 import { money, categoryName } from "./catalog.js?v=3";
 import { getCart, clearCart, onCartChange } from "./cart.js";
 

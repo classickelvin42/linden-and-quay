@@ -1,3 +1,4 @@
 .DS_Store
 images/_src/
 data/shop.db
+.vercel

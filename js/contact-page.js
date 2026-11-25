@@ -1,4 +1,4 @@
-import { mountShell } from "./shell.js?v=5";
+import { mountShell } from "./shell.js?v=8";
 import { bindForm } from "./forms.js?v=5";
 
 await mountShell(document.body.dataset.page || "");
