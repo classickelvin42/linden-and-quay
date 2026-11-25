@@ -3,7 +3,7 @@
   "tagline": "A women’s boutique for dresses, shirts, watches, and shoes.",
   "currency": "USD",
   "locale": "en-US",
-  "announcement": "Sample boutique — replace this announcement in data/store.json before launch.",
+  "announcement": "New pieces in the boutique · dresses, shirts, watches, and shoes",
   "contactEmailPlaceholder": "hello@example.com",
   "contactNote": "Replace this placeholder with the studio’s real email before launch.",
   "addressNote": "Add the studio address here before launch.",

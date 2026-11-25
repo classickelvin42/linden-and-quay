@@ -52,14 +52,16 @@ function headerMarkup(store, active, query) {
           <span class="visually-hidden">Open menu</span>
         </button>
         <a class="wordmark" href="index.html">${escapeHtml(store.name)}</a>
-        <nav class="desk-nav" aria-label="Categories">
+        <nav class="desk-nav" aria-label="Shop">
           <a href="shop.html"${active === "shop" ? ' aria-current="page"' : ""}>Shop</a>
-          ${links}
+          <a href="shop.html">Categories</a>
+          <a href="about.html"${active === "about" ? ' aria-current="page"' : ""}>About</a>
+          <a href="contact.html"${active === "contact" ? ' aria-current="page"' : ""}>Contact</a>
         </nav>
         <div class="header-tools">
           <form class="header-search" action="shop.html" method="get" role="search">
             <label class="visually-hidden" for="header-q">Search products</label>
-            <input id="header-q" name="q" type="search" value="${escapeAttr(query)}" placeholder="Search" autocomplete="off">
+            <input id="header-q" name="q" type="search" value="${escapeAttr(query)}" placeholder="Search products..." autocomplete="off">
             <button class="icon-btn" type="submit">${ICONS.search}<span class="visually-hidden">Search</span></button>
           </form>
           <a class="icon-btn" href="wishlist.html" aria-label="Saved pieces">
@@ -104,33 +106,46 @@ function footerMarkup(store) {
   return `
     <footer class="site-footer">
       <div class="footer-grid">
-        <div>
+        <div class="footer-brand">
           <p class="wordmark footer-mark">${escapeHtml(store.name)}</p>
-          <p>${escapeHtml(store.tagline)} Sample copy for a store that is not yet taking orders.</p>
+          <p class="footer-blurb">${escapeHtml(store.tagline)}</p>
+          <div class="footer-social">
+            <a href="contact.html" aria-label="Instagram, not connected yet"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3.4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="0.8" fill="currentColor"/></svg></a>
+            <a href="contact.html" aria-label="Facebook, not connected yet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h2V5h-2c-2.2 0-4 1.8-4 4v2H8v3h2v6h3v-6h2.2l.8-3H13V9c0-.6.4-1 1-1Z" fill="currentColor"/></svg></a>
+            <a href="contact.html" aria-label="X, not connected yet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6.5 10.8 12 6.2 17.5h1.7l3.4-4 3 4H18l-4.9-6.2 4.4-4.8h-1.7l-3.1 3.6-2.7-3.6H6Z" fill="currentColor"/></svg></a>
+          </div>
+          <a class="footer-mail" href="mailto:${escapeAttr(store.contactEmailPlaceholder)}"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="6" width="17" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m4.5 7.5 7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>${escapeHtml(store.contactEmailPlaceholder)}</a>
         </div>
         <div>
           <h2>Shop</h2>
-          <ul>${cats}</ul>
-        </div>
-        <div>
-          <h2>Visit</h2>
           <ul>
-            <li><a href="about.html">The house</a></li>
-            <li><a href="journal.html">Journal</a></li>
-            <li><a href="size-guide.html">Size guide</a></li>
-            <li><a href="track.html">Track an order</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="terms.html">Terms</a></li>
+            <li><a href="shop.html">All products</a></li>
+            ${cats}
+            <li><a href="shop.html?sort=newest">New arrivals</a></li>
           </ul>
         </div>
         <div>
-          <h2>Studio</h2>
-          <p class="placeholder-note">${escapeHtml(store.addressNote)}</p>
-          <p class="placeholder-note">${escapeHtml(store.contactNote)} <span>${escapeHtml(store.contactEmailPlaceholder)}</span></p>
+          <h2>Customer care</h2>
+          <ul>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="track.html">Track my order</a></li>
+            <li><a href="size-guide.html">Size guide</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <ul>
+            <li><a href="about.html">Our story</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="wishlist.html">Saved pieces</a></li>
+          </ul>
         </div>
       </div>
-      <p class="footer-base">Sample storefront. Prices, stock, and policies are placeholders until Precious and Things replaces them.</p>
+      <div class="footer-base">
+        <p>© 2026 ${escapeHtml(store.name)}. Sample storefront.</p>
+      </div>
     </footer>`;
 }
 
@@ -153,7 +168,7 @@ function overlayMarkup() {
       <p>When a real authentication service is added, this button can open it. Until then, shopping stays on this device in the bag.</p>
       <a class="btn" href="contact.html">Contact the studio</a>
     </dialog>
-    <button class="chat-launcher" type="button" data-open="chat">Message</button>
+    <button class="chat-launcher" type="button" data-open="chat" aria-label="Message"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6.5h14v9H8.5L5 18.5v-12Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></button>
     <dialog class="modal" id="chat-dialog" aria-labelledby="chat-title">
       <div class="dialog-head">
         <h2 id="chat-title">Message the studio</h2>
@@ -389,10 +404,11 @@ export function productCard(product, store) {
         </a>
         <button class="wish-btn" type="button" data-wish="${product.id}" data-name="${escapeAttr(product.name)}" aria-pressed="false">${ICONS.heart}<span class="visually-hidden">Save</span></button>
       </div>
-      <p class="card-cat">${escapeHtml(categoryName(store, product.category))}${product.color ? ` · ${escapeHtml(product.color)}` : ""}</p>
       <h3><a href="product.html?slug=${product.slug}">${escapeHtml(product.name)}</a></h3>
-      ${price}
-      <a class="text-link" href="product.html?slug=${product.slug}">${product.inStock ? "View piece" : "View details"}</a>
+      <div class="card-row">
+        ${price}
+        <a class="card-go" href="product.html?slug=${product.slug}" aria-label="View ${escapeAttr(product.name)}">→</a>
+      </div>
     </article>`;
 }
 

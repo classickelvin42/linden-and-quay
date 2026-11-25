@@ -1,4 +1,4 @@
-import { mountShell, cartInner } from "./shell.js?v=5";
+import { mountShell, cartInner } from "./shell.js?v=8";
 import { onCartChange } from "./cart.js";
 
 const { store, products } = await mountShell("cart");

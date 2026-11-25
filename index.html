@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Precious and Things</title>
   <meta name="description" content="Precious and Things is a sample women’s boutique for dresses, shirts, watches, shoes, slippers, and heels.">
-  <link rel="stylesheet" href="css/styles.css?v=6">
+  <link rel="stylesheet" href="css/styles.css?v=10">
 </head>
 <body>
   <main id="main">
     <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Women’s boutique</p>
-        <h1>Pieces chosen slowly, worn often.</h1>
-        <p>Dresses, shirts, watches, shoes, slippers, and heels, edited for a warm and modern wardrobe. This is a sample storefront for Precious and Things.</p>
-        <a class="btn" href="shop.html">Explore the collection</a>
-      </div>
       <div class="hero-photo-wrap" data-hero>
         <img class="is-on" src="images/brand/rack.jpg" alt="Ivory, rust, and black blouses hanging from a pale branch against a warm wall.">
         <img src="images/brand/atelier.jpg" alt="A woman browsing a clothing rail inside a bright boutique.">
         <img src="images/brand/rail.jpg" alt="A woman in a white shirt looking through a rail of clothes in a boutique.">
+        <div class="hero-copy">
+          <p class="eyebrow">Precious and Things · Women’s boutique</p>
+          <h1>Dresses, shirts, watches, and shoes.</h1>
+          <p>Pieces for the day and the evening. Prices and stock in this shop are samples until the studio replaces them.</p>
+          <div class="hero-actions">
+            <a class="btn" href="shop.html">Shop now</a>
+            <a class="btn btn-ghost" href="about.html">Our story</a>
+          </div>
+        </div>
         <div class="slide-dots" role="tablist" aria-label="Featured photographs">
           <button type="button" role="tab" aria-selected="true" aria-label="Show the clothing rail"></button>
           <button type="button" role="tab" aria-selected="false" aria-label="Show the boutique interior"></button>
@@ -30,15 +33,21 @@
 
     <section class="section" aria-labelledby="cats-title">
       <div class="section-head">
-        <h2 id="cats-title">The edit</h2>
+        <div>
+          <p class="eyebrow">Shop by category</p>
+          <h2 id="cats-title">Find exactly what you need</h2>
+        </div>
       </div>
       <div class="cat-grid" data-categories></div>
     </section>
 
     <section class="section" aria-labelledby="new-title">
       <div class="section-head">
-        <h2 id="new-title">New arrivals</h2>
-        <a href="shop.html?sort=newest">View all</a>
+        <div>
+          <p class="eyebrow">Trending now</p>
+          <h2 id="new-title">Pieces customers look at first</h2>
+        </div>
+        <a href="shop.html?sort=newest">View all products</a>
       </div>
       <div class="grid" data-new></div>
     </section>
@@ -68,46 +77,47 @@
       <h2 id="care-title" class="visually-hidden">How this sample shop works</h2>
       <div class="perks">
         <article class="perk">
-          <h3>Sample prices</h3>
-          <p>Currency is set in the store file. Amounts here are not a quote from the boutique.</p>
+          <h3>Edited pieces</h3>
+          <p>Dresses, shirts, watches, shoes, slippers, and heels in one catalog.</p>
         </article>
         <article class="perk">
-          <h3>Shipping later</h3>
-          <p>Shipping and tax stay unpriced until a real checkout service supplies the rates.</p>
+          <h3>Clear prices</h3>
+          <p>Each piece shows its sample price. Change the numbers in the catalog file.</p>
         </article>
         <article class="perk">
-          <h3>Your bag, this device</h3>
-          <p>The bag is saved in this browser. It is not an account and it is not an order.</p>
+          <h3>Bag on this device</h3>
+          <p>The bag stays in this browser until a real checkout is connected.</p>
         </article>
       </div>
     </section>
 
     <section class="newsletter" aria-labelledby="news-title">
       <div class="newsletter-inner">
-        <h2 id="news-title">Notes from the house</h2>
-        <p>Leave an email to store it on this shop server. It is not sent to a mailing company.</p>
-        <div>
-          <form data-newsletter novalidate>
-            <div class="error-summary" tabindex="-1" hidden>
-              <p>Please fix the following:</p>
-              <ul></ul>
-            </div>
-            <label for="news-email">Email</label>
-            <input id="news-email" name="email" type="email" required data-label="Email" autocomplete="email">
-            <p class="field-error" id="news-email-error" hidden></p>
-            <label class="consent"><input id="news-consent" name="consent" type="checkbox" required data-label="Consent"> I agree to store this email on the shop server.</label>
-            <p class="field-error" id="news-consent-error" hidden></p>
-            <div class="hp" aria-hidden="true"><label>Company<input name="company" tabindex="-1" autocomplete="off"></label></div>
-            <button class="btn" type="submit">Save email</button>
-          </form>
-          <div class="form-success" tabindex="-1" hidden>
-            <p class="success-copy"></p>
-            <button class="text-btn reset-form" type="button">Enter another email</button>
+        <p class="eyebrow">The list</p>
+        <h2 id="news-title">Join the list</h2>
+        <p>New pieces and restocks. Your email stays on this shop server.</p>
+        <form data-newsletter novalidate>
+          <div class="error-summary" tabindex="-1" hidden>
+            <p>Please fix the following:</p>
+            <ul></ul>
           </div>
+          <div class="news-row">
+            <label class="visually-hidden" for="news-email">Email</label>
+            <input id="news-email" name="email" type="email" required data-label="Email" autocomplete="email" placeholder="Email address">
+            <button class="btn" type="submit">Join</button>
+          </div>
+          <p class="field-error" id="news-email-error" hidden></p>
+          <label class="consent news-consent"><input id="news-consent" name="consent" type="checkbox" required data-label="Consent"> I agree to store this email on the shop server.</label>
+          <p class="field-error" id="news-consent-error" hidden></p>
+          <div class="hp" aria-hidden="true"><label>Company<input name="company" tabindex="-1" autocomplete="off"></label></div>
+        </form>
+        <div class="form-success" tabindex="-1" hidden>
+          <p class="success-copy"></p>
+          <button class="text-btn reset-form" type="button">Enter another email</button>
         </div>
       </div>
     </section>
   </main>
-  <script type="module" src="js/home.js?v=8"></script>
+  <script type="module" src="js/home.js?v=11"></script>
 </body>
 </html>

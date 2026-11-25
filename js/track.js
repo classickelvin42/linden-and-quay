@@ -1,4 +1,4 @@
-import { mountShell, escapeHtml } from "./shell.js?v=5";
+import { mountShell, escapeHtml } from "./shell.js?v=8";
 
 await mountShell("track");
 const form = document.querySelector("[data-track]");
